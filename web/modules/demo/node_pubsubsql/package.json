@@ -1,0 +1,40 @@
+{
+  "name": "pubsubsql",
+  "version": "0.0.3",
+  "drupal-library": true,
+  "description": "Nodejs client for PubSubSQL",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pubsubsql/node_pubsubsql.git"
+  },
+  "keywords": [
+    "pubsub",
+    "sql"
+  ],
+  "author": "PubSubSQL <oleg@pubsubsql.com> (http://www.pubsubsql.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pubsubsql/node_pubsubsql/issues"
+  },
+  "dependencies": {
+   "net": "*",
+   "events": "*",
+   "util": "*"
+  },
+  "devDependecies": {
+   "mocha": "*",
+   "chai": "*",
+   "async": "*"
+  },
+  "homepage": "https://github.com/pubsubsql/node_pubsubsql#readme",
+  "directories": {
+    "example": "examples"
+  }
+}

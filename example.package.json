@@ -18,10 +18,15 @@
   },
   "homepage": "https://github.com/darvanen/drupal-js#readme",
   "devDependencies": {
-    "vite": "^5.2.11"
+    "glob": "^10.3.12",
+    "path": "^0.12.7",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.11",
+    "vite-plugin-watch-and-run": "^1.7.0"
   },
-  "dependencies": {
-    "react-datepicker": "^6.9.0",
-    "react-paginate": "^8.2.0"
+  "prettier": {
+    "arrowParens": "avoid",
+    "semi": false,
+    "singleQuote": true
   }
 }
