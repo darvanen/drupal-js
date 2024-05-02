@@ -2,9 +2,11 @@
   "name": "drupal-js",
   "version": "0.0.0",
   "description": "A framework for managing JS dependencies in a Drupal project.",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
+    "build": "vite build",
     "compile:libraries": "./scripts/compile-libraries.sh web/modules",
+    "dev": "vite --host",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
