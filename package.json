@@ -1,0 +1,22 @@
+{
+  "name": "drupal-js",
+  "version": "0.0.0",
+  "description": "A framework for managing JS dependencies in a Drupal project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darvanen/drupal-js.git"
+  },
+  "author": "Max Pogonowski",
+  "license": "SEE LICENCE IN LICENCE.txt",
+  "bugs": {
+    "url": "https://github.com/darvanen/drupal-js/issues"
+  },
+  "homepage": "https://github.com/darvanen/drupal-js#readme",
+  "devDependencies": {
+    "vite": "^5.2.11"
+  }
+}
