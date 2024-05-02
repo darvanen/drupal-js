@@ -16,13 +16,15 @@ npm run compile:libraries
 npm run build
 ```
 
-Or use *yarn* or *pnpm* if you prefer, this approach is package-manager-agnostic.
+Or use yarn or pnpm if you prefer, this approach is package-manager-agnostic.
 
 You should see the compiled libraries appear in `web/libraries/compiled`, with three pairs of built files for:
 
 - infinite-tree
 - node_pubsubsql
 - events - this is the common dependency
+
+------
 
 The active files worth looking at that drive this POC are
 
