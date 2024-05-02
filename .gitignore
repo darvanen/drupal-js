@@ -1,0 +1,23 @@
+# Ignore core when managing all of a project's dependencies with Composer
+# including Drupal core.
+/web/core
+
+# Ignore dependencies that are managed with Composer.
+/vendor/
+
+# Ignore local configuration files.
+web/sites/default/settings.local.php
+web/sites/deafult/local.services.yml
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore multi-site test environment.
+sites/simpletest
+
+# Ignore JS source and build folders
+node_modules
+dist
+
+.idea
