@@ -19,5 +19,7 @@ sites/simpletest
 # Ignore JS source and build folders
 node_modules
 dist
+/package-lock.json
+/yarn.lock
 
 .idea

@@ -1,6 +1,7 @@
 {
   "author": "HackerOne",
   "name": "react-datepicker",
+  "drupal-library": true,
   "description": "A simple and reusable datepicker component for React",
   "version": "6.9.0",
   "license": "MIT",
