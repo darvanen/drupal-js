@@ -22,5 +22,15 @@ You should see the compiled libraries appear in `web/libraries/compiled`, with t
 - nob_pubsubsql
 - events - this is the common dependency
 
+The active files worth looking at that drive this POC are
+
+- [example.package.json](./example.package.json)
+- [vite.config.js](./vite.config.js)
+- [compile-libraries.sh](./scripts/compile-libraries.sh)
+
+Everything else is just a standard Drupal build so you can see it in-situ.
+
+At the moment the plan is to make a composer plugin that provides appropriate hooks to inject those files.
+
 You can find me on
 [Drupal Slack](https://www.drupal.org/community/contributor-guide/reference-information/talk/tools/slack) as @darvanen.
