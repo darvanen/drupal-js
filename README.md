@@ -19,7 +19,7 @@ npm run build
 You should see the compiled libraries appear in `web/libraries/compiled`, with three pairs of built files for:
 
 - infinite-tree
-- nob_pubsubsql
+- node_pubsubsql
 - events - this is the common dependency
 
 The active files worth looking at that drive this POC are
