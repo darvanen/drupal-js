@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import { watchAndRun } from 'vite-plugin-watch-and-run'
 import { globSync } from 'glob'
 
 
@@ -31,17 +30,6 @@ export default defineConfig(({ mode }) => {
      },
    },
    css: { devSourcemap: true },
-   define: { 'process.env.NODE_ENV': env },
-   plugins: [
-     watchAndRun([
-       {
-         name: 'twig-reload',
-         watchKind: ['add', 'unlink'],
-         watch: resolve('./templates/**/*.twig'),
-         run: 'drush cr',
-         delay: 300,
-       },
-     ]),
-   ],
+   define: { 'process.env.NODE_ENV': env }
  }
 })

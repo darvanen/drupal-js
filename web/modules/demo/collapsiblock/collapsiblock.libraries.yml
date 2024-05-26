@@ -1,0 +1,23 @@
+core:
+  css:
+    theme:
+      theme/dist/style.css: { minified: true }
+  js:
+    theme/dist/collapsiblock.js: { minified: true }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - js_cookie/js-cookie
+    - core/once
+    - collapsiblock/libraries.slide-element
+
+libraries.slide-element:
+  remote: https://github.com/alexmacarthur/slide-element
+  version: '2.3.1'
+  license:
+    name: ISC
+    url: https://github.com/alexmacarthur/slide-element/blob/master/LICENSE
+    gpl-compatible: true
+  cdn: https://unpkg.com/slide-element@2.3.1/dist/index.umd.js
+  js:
+    /libraries/slide-element/index.umd.js: { minified: true }

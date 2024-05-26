@@ -1,0 +1,8 @@
+div .collapsiblockTitle button {
+  display: block;
+  background: url(../../images/expanded.png) no-repeat left;
+}
+
+div .collapsiblockTitleCollapsed button {
+  background: url(../../images/collapsed-rtl.png) no-repeat left;
+}

@@ -1,0 +1,4 @@
+default_action: 1
+active_pages: FALSE
+slide_speed: 200
+cookie_lifetime: null

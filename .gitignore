@@ -23,5 +23,6 @@ dist
 /package-lock.json
 /yarn.lock
 /web/libraries/compiled
+/web/modules/contrib
 
 .idea

@@ -1,0 +1,4 @@
+# Configuration file for stylelint code checking.
+# @see: https://git.drupalcode.org/project/ui_suite_bootstrap/-/blob/5.0.x/.stylelintignore
+
+/theme/dist/*

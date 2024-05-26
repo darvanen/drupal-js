@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Collapsiblock module.
+ */
+
+/**
+ * Upgrade to Collapsiblock 8.x-2.x.
+ */
+function collapsiblock_update_8201(&$sandbox) {
+  $settings = \Drupal::configFactory()->getEditable('collapsiblock.settings');
+  $action = $settings->get('default_state');
+  $action = empty($action) ? '1' : $action;
+  $settings->set('default_action', $action)
+    ->clear('default_state')
+    ->clear('title')
+    ->clear('block')
+    ->clear('content')
+    ->save();
+}
+
+/**
+ * Add cookie expiration time field.
+ */
+function collapsiblock_update_9201(&$sandbox) {
+  $settings = \Drupal::configFactory()->getEditable('collapsiblock.settings');
+  $cookieLifetime = $settings->get('cookie_lifetime');
+  $settings->set('cookie_lifetime', $cookieLifetime)
+    ->save();
+}
+
+/**
+ * Clear slide_type from settings.
+ */
+function collapsiblock_update_9401(&$sandbox) {
+  $settings = \Drupal::configFactory()->getEditable('collapsiblock.settings');
+  $settings->clear('slide_type')
+    ->save();
+}
+
+/**
+ * Implements hook_update_N().
+ *
+ * Install js_cookie module with update.
+ */
+function collapsiblock_update_9402(&$sandbox) {
+  \Drupal::service('module_installer')->install(['js_cookie']);
+}

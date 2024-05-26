@@ -1,0 +1,22 @@
+.collapsiblockTitle button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  color: #0071b3;
+  border: none;
+  background: url(../../images/expanded.png) no-repeat right;
+
+  &:hover {
+    color: #018fe2;;
+  }
+}
+
+div .collapsiblockTitleCollapsed button {
+  background: url(../../images/collapsed.png) no-repeat right;
+}
+
+.collapsiblockContent {
+  overflow: hidden;
+}

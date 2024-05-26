@@ -1,0 +1,7 @@
+collapsiblock.global_settings:
+  path: 'admin/config/user-interface/collapsiblock'
+  defaults:
+    _form: '\Drupal\collapsiblock\Form\CollapsiblockGlobalSettings'
+    _title: 'Collapsiblock'
+  requirements:
+    _permission: 'administer site configuration'

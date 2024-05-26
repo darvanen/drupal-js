@@ -1,0 +1,44 @@
+{
+  "name": "drupal/collapsiblock",
+  "description": "Provides a way to make individual Drupal blocks collapsible.",
+  "type": "drupal-module",
+  "require": {
+      "drupal/js_cookie": "^1.0"
+  },
+  "extra": {
+      "foxy": true
+  },
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Nedjo Rogers (nedjo)",
+      "homepage": "https://www.drupal.org/u/nedjo",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Jordan L (j0rd)",
+      "homepage": "https://www.drupal.org/u/j0rd",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Simon Perdrisat (gagarine)",
+      "homepage": "https://www.drupal.org/u/gagarine",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Max Pogonowski (darvanen)",
+      "homepage": "https://www.drupal.org/u/darvanen",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Sonvir Choudhary (sonvir249)",
+      "homepage": "https://www.drupal.org/u/sonvir249",
+      "role": "Maintainer"
+    }
+  ],
+  "homepage": "https://www.drupal.org/project/collapsiblock",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/collapsiblock",
+    "source": "https://git.drupalcode.org/project/collapsiblock"
+  }
+}

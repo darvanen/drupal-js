@@ -1,0 +1,5 @@
+collapsiblock.global_settings:
+  title: 'Collapsiblock'
+  route_name: collapsiblock.global_settings
+  description: 'Collapsiblock global settings'
+  parent: system.admin_config_ui
