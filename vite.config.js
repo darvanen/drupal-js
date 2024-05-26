@@ -1,35 +1,33 @@
-import { defineConfig } from 'vite'
-import { resolve } from 'path'
-import { globSync } from 'glob'
-
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import { globSync } from 'glob';
 
 export default defineConfig(({ mode }) => {
- const env = mode === 'production' ? '"production"' : '"development"'
+  const env = mode === 'production' ? '"production"' : '"development"';
 
- const inputs = globSync('./web/modules/**/entry.js').reduce((acc, input) => {
-   const library = input.match(/\/([^\/]+)\/entry\.js$/)[1]
-   acc[library] = resolve(__dirname, input)
-   return acc
- }, {})
+  const inputs = globSync('./web/modules/**/entry.js').reduce((acc, input) => {
+    const library = input.match(/\/([^\/]+)\/entry\.js$/)[1];
+    acc[library] = resolve(__dirname, input);
+    return acc;
+  }, {});
 
-
- return {
-   build: {
-     baseUrl: 'web/libraries/compiled',
-     manifest: true,
-     cssCodeSplit: true,
-     lib: {
-       entry: inputs,
-       name: 'drupal-libraries',
-       fileName: '[name]',
-     },
-     outDir: 'web/libraries/compiled',
-     rollupOptions: {
-       input: inputs,
-       external: '[Drupal, once]',
-     },
-   },
-   css: { devSourcemap: true },
-   define: { 'process.env.NODE_ENV': env }
- }
-})
+  return {
+    build: {
+      baseUrl: 'web/libraries/compiled',
+      manifest: true,
+      cssCodeSplit: true,
+      lib: {
+        entry: inputs,
+        name: 'drupal-libraries',
+        fileName: '[name]',
+      },
+      outDir: 'web/libraries/compiled',
+      rollupOptions: {
+        input: inputs,
+        external: '[Drupal, once]',
+      },
+    },
+    css: { devSourcemap: true },
+    define: { 'process.env.NODE_ENV': env },
+  };
+});

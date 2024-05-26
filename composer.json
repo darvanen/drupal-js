@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/collapsiblock": "4.x-dev#f7c9ca86",
+        "drupal/collapsiblock": "4.x-dev#0943cddd",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9848a4c72a9c273af14c9ded4221b6b0",
+    "content-hash": "e66ecdbb8b728beea0314426721603c3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1695,11 +1695,14 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/collapsiblock.git",
-                "reference": "f7c9ca86"
+                "reference": "0943cddd"
             },
             "require": {
                 "drupal/core": "^10 || ^11",
                 "drupal/js_cookie": "^1.0"
+            },
+            "require-dev": {
+                "php-forge/foxy": "^0.1"
             },
             "type": "drupal-module",
             "extra": {
@@ -1707,8 +1710,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "4.1.0+16-dev",
-                    "datestamp": "1716210624",
+                    "version": "4.1.0+19-dev",
+                    "datestamp": "1716725220",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2098,7 +2101,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/foxy.git",
-                "reference": "e546be21bbb9d3d8dfcfbb7edadd473615735a3b"
+                "reference": "a6a69761d7fed32b41fadc800bd42edfbd0e462f"
             },
             "require": {
                 "drupal/core": "^10 || ^11",
@@ -2111,7 +2114,7 @@
                 },
                 "drupal": {
                     "version": "2.x-dev",
-                    "datestamp": "1716723415",
+                    "datestamp": "1716724645",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
