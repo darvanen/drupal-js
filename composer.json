@@ -16,11 +16,11 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/collapsiblock": "4.x-dev#f7c9ca86",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/foxy": "2.x-dev",
-        "drupal/js_cookie": "^1.0",
         "drush/drush": "^12.5"
     },
     "require-dev": {

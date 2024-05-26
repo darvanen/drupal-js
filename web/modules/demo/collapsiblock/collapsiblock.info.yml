@@ -1,8 +1,0 @@
-name: 'Collapsiblock'
-type: 'module'
-description: 'Makes individual blocks collapsible.'
-package: 'User interface'
-core_version_requirement: ^10 || ^11
-configure: collapsiblock.global_settings
-dependencies:
-  - js_cookie:js_cookie
