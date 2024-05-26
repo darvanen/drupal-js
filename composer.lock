@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e66ecdbb8b728beea0314426721603c3",
+    "content-hash": "7d2397cb9dd05b98a35c792200df4e61",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1701,17 +1701,14 @@
                 "drupal/core": "^10 || ^11",
                 "drupal/js_cookie": "^1.0"
             },
-            "require-dev": {
-                "php-forge/foxy": "^0.1"
-            },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "4.1.0+19-dev",
-                    "datestamp": "1716725220",
+                    "version": "4.1.0+21-dev",
+                    "datestamp": "1716725758",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1968,47 +1965,6 @@
                 "source": "https://github.com/drupal/core-composer-scaffold/tree/10.2.6"
             },
             "time": "2024-04-09T07:27:23+00:00"
-        },
-        {
-            "name": "drupal/core-project-message",
-            "version": "10.2.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-project-message.git",
-                "reference": "d1da83722735cb0f7ccabf9fef7b5607b442c3a8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-project-message/zipball/d1da83722735cb0f7ccabf9fef7b5607b442c3a8",
-                "reference": "d1da83722735cb0f7ccabf9fef7b5607b442c3a8",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^2",
-                "php": ">=7.3.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Drupal\\Composer\\Plugin\\ProjectMessage\\MessagePlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\Composer\\Plugin\\ProjectMessage\\": "."
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Adds a message after Composer installation.",
-            "homepage": "https://www.drupal.org/project/drupal",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/10.2.6"
-            },
-            "time": "2023-07-24T07:55:25+00:00"
         },
         {
             "name": "drupal/core-recommended",

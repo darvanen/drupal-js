@@ -11,7 +11,6 @@ To see the POC in action, clone this repository, then run:
 
 ```bash
 composer install
-./node_modules/vite/bin/vite.js build
 ```
 
 You should see
