@@ -10,30 +10,12 @@
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "php-forge/foxy",
-                "version": "0.1.1",
-                "type": "plugin",
-                "source": {
-                    "url": "git@github.com:php-forge/foxy.git",
-                    "type": "git",
-                    "reference": "custom-directory"
-                }
-            }
+            "type": "github",
+            "url": "https://github.com/php-forge/foxy"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "drupal/collapsiblock",
-                "version": "5.0.0",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupalcode.org/project/collapsiblock.git",
-                    "type": "git",
-                    "reference": "foxy"
-                }
-            }
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/collapsiblock.git"
         },
         {
             "type": "composer",
@@ -42,12 +24,13 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/collapsiblock": "^5.0",
+        "drupal/collapsiblock": "4.2.0 as dev-foxy",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/foxy": "2.x-dev",
+        "drupal/js_cookie": "^1.0",
         "drush/drush": "^12.5",
-        "php-forge/foxy": "^0.1.1"
+        "php-forge/foxy": "0.1.1 as dev-custom-directory"
     },
     "require-dev": {
         "drupal/core-dev": "^10.2"

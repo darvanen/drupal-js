@@ -10,8 +10,8 @@ web/sites/default/settings.local.php
 web/sites/deafult/local.services.yml
 
 # Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
+web/sites/*/files
+web/sites/*/private
 
 # Ignore multi-site test environment.
 sites/simpletest

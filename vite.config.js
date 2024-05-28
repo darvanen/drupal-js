@@ -5,6 +5,9 @@ import { globSync } from 'glob';
 export default defineConfig(({ mode }) => {
   const env = mode === 'production' ? '"production"' : '"development"';
 
+  const test = globSync('./web/modules/**/*.libraries.yml')
+  console.log(test)
+
   const inputs = globSync('./web/modules/**/entry.js').reduce((acc, input) => {
     const library = input.match(/\/([^\/]+)\/entry\.js$/)[1];
     acc[library] = resolve(__dirname, input);
