@@ -23,13 +23,26 @@
             }
         },
         {
+            "type": "package",
+            "package": {
+                "name": "drupal/collapsiblock",
+                "version": "5.0.0",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/project/collapsiblock.git",
+                    "type": "git",
+                    "reference": "foxy"
+                }
+            }
+        },
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/collapsiblock": "4.x-dev#4d331139",
+        "drupal/collapsiblock": "^5.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/foxy": "2.x-dev",
