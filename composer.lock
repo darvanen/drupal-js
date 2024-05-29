@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae7d9b4ebf512d1b9e77a180bd86905b",
+    "content-hash": "c50128de0e5d38c7115fec67ab144780",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1691,14 +1691,17 @@
         },
         {
             "name": "drupal/collapsiblock",
-            "version": "4.2.0",
+            "version": "dev-foxy",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/collapsiblock.git",
-                "reference": "f56ae6c931f2e95a492bae398552bb94416dabc5"
+                "reference": "befb217cb513cd9c6355ecc320bf750c6b07fdba"
             },
             "require": {
                 "drupal/js_cookie": "^1.0"
+            },
+            "require-dev": {
+                "php-forge/foxy": "^0.1"
             },
             "type": "drupal-module",
             "license": [
@@ -1737,7 +1740,7 @@
                 "issues": "https://www.drupal.org/project/issues/collapsiblock",
                 "source": "https://git.drupalcode.org/project/collapsiblock"
             },
-            "time": "2024-05-26T12:15:47+00:00"
+            "time": "2024-05-29T23:02:31+00:00"
         },
         {
             "name": "drupal/core",
@@ -2043,7 +2046,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/foxy.git",
-                "reference": "a6a69761d7fed32b41fadc800bd42edfbd0e462f"
+                "reference": "8a749a266bf9b90c80af4fa044fdd44a98cb03cc"
             },
             "require": {
                 "drupal/core": "^10 || ^11",
@@ -2056,7 +2059,7 @@
                 },
                 "drupal": {
                     "version": "2.x-dev",
-                    "datestamp": "1716724645",
+                    "datestamp": "1717023998",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3446,16 +3449,16 @@
         },
         {
             "name": "php-forge/foxy",
-            "version": "0.1.1",
+            "version": "dev-custom-directory",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-forge/foxy.git",
-                "reference": "cc7b2181436cc9bb9ea38c94ee71c271b4b345e9"
+                "reference": "fdb6ad4ac0750740d29f190b9d7059e8ab0051e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-forge/foxy/zipball/cc7b2181436cc9bb9ea38c94ee71c271b4b345e9",
-                "reference": "cc7b2181436cc9bb9ea38c94ee71c271b4b345e9",
+                "url": "https://api.github.com/repos/php-forge/foxy/zipball/fdb6ad4ac0750740d29f190b9d7059e8ab0051e4",
+                "reference": "fdb6ad4ac0750740d29f190b9d7059e8ab0051e4",
                 "shasum": ""
             },
             "require": {
@@ -3522,10 +3525,10 @@
                 "yarn"
             ],
             "support": {
-                "source": "https://github.com/php-forge/foxy/tree/0.1.1",
+                "source": "https://github.com/php-forge/foxy/tree/custom-directory",
                 "issues": "https://github.com/php-forge/foxy/issues"
             },
-            "time": "2024-04-04T10:23:15+00:00"
+            "time": "2024-05-27T15:11:42+00:00"
         },
         {
             "name": "phpowermove/docblock",
@@ -11526,20 +11529,22 @@
     "aliases": [
         {
             "package": "drupal/collapsiblock",
-            "version": "4.2.0.0",
-            "alias": "dev-foxy",
-            "alias_normalized": "dev-foxy"
+            "version": "dev-foxy",
+            "alias": "4.2.0",
+            "alias_normalized": "4.2.0.0"
         },
         {
             "package": "php-forge/foxy",
-            "version": "0.1.1.0",
-            "alias": "dev-custom-directory",
-            "alias_normalized": "dev-custom-directory"
+            "version": "dev-custom-directory",
+            "alias": "0.1.1",
+            "alias_normalized": "0.1.1.0"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/foxy": 20
+        "drupal/collapsiblock": 20,
+        "drupal/foxy": 20,
+        "php-forge/foxy": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

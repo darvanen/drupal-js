@@ -24,13 +24,13 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/collapsiblock": "4.2.0 as dev-foxy",
+        "drupal/collapsiblock": "dev-foxy as 4.2.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/foxy": "2.x-dev",
         "drupal/js_cookie": "^1.0",
         "drush/drush": "^12.5",
-        "php-forge/foxy": "0.1.1 as dev-custom-directory"
+        "php-forge/foxy": "dev-custom-directory as 0.1.1"
     },
     "require-dev": {
         "drupal/core-dev": "^10.2"
