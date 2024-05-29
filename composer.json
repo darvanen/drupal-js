@@ -10,17 +10,8 @@
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "php-forge/foxy",
-                "version": "0.1.1",
-                "type": "plugin",
-                "source": {
-                    "url": "git@github.com:php-forge/foxy.git",
-                    "type": "git",
-                    "reference": "custom-directory"
-                }
-            }
+            "type": "github",
+            "url": "https://github.com/php-forge/foxy"
         },
         {
             "type": "composer",
@@ -34,7 +25,7 @@
         "drupal/core-recommended": "^10.2",
         "drupal/foxy": "2.x-dev",
         "drush/drush": "^12.5",
-        "php-forge/foxy": "^0.1.1"
+        "php-forge/foxy": "0.1.1 as dev-custom-directory"
     },
     "require-dev": {
         "drupal/core-dev": "^10.2"
@@ -54,7 +45,8 @@
             "php-forge/foxy": true
         },
         "foxy": {
-            "manager": "npm"
+            "manager": "npm",
+            "root-package-dir": "web/modules/contrib/collapsiblock"
         },
         "sort-packages": true
     },
