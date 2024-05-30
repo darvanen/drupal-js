@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import { globSync } from 'glob'
 import jsYaml from 'js-yaml'
-import fs from 'fs'
+import { readFileSync } from 'fs'
 
 export default defineConfig(({ mode }) => {
   const env = mode === 'production' ? '"production"' : '"development"'
@@ -39,13 +39,21 @@ function getInputs() {
   // Use reduce to process each file and collect all JS files
   return files.reduce((acc, libraryFilePath) => {
     try {
-      const moduleDirectoryPath = libraryFilePath.substring(0, libraryFilePath.lastIndexOf('/'))
-      const moduleName = moduleDirectoryPath.substring(moduleDirectoryPath.lastIndexOf('/') + 1)
-      const fileContents = fs.readFileSync(libraryFilePath, 'utf8')
+      const moduleDirectoryPath = libraryFilePath.substring(
+        0,
+        libraryFilePath.lastIndexOf('/'),
+      )
+      const moduleName = moduleDirectoryPath.substring(
+        moduleDirectoryPath.lastIndexOf('/') + 1,
+      )
+      const fileContents = readFileSync(libraryFilePath, 'utf8')
       const data = jsYaml.load(fileContents)
       const jsFiles = extractJsFiles(data)
-      jsFiles.forEach(filePath => {
-        const fileName = filePath.substring(filePath.lastIndexOf('/') + 1, filePath.lastIndexOf('.'))
+      jsFiles.forEach((filePath) => {
+        const fileName = filePath.substring(
+          filePath.lastIndexOf('/') + 1,
+          filePath.lastIndexOf('.'),
+        )
         const key = moduleName + '/' + fileName
         acc[key] = moduleDirectoryPath + '/' + filePath
       })
@@ -65,7 +73,7 @@ function extractJsFiles(data) {
 
   function traverse(obj) {
     if (obj && typeof obj === 'object') {
-      Object.keys(obj).forEach(key => {
+      Object.keys(obj).forEach((key) => {
         if (key === 'js' && typeof obj[key] === 'object') {
           jsFiles.push(...Object.keys(obj[key]))
         } else {
