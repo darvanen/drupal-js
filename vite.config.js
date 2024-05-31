@@ -6,21 +6,14 @@ import { readFileSync } from 'fs'
 export default defineConfig(({ mode }) => {
   const env = mode === 'production' ? '"production"' : '"development"'
 
-  const inputs = getInputs()
-
   return {
     build: {
       baseUrl: 'web/libraries/compiled',
       manifest: true,
       cssCodeSplit: true,
-      lib: {
-        entry: inputs,
-        name: 'drupal-libraries',
-        fileName: '[name]',
-      },
       outDir: 'web/libraries/compiled',
       rollupOptions: {
-        input: inputs,
+        input: getInputs(),
         external: '[Drupal, once]',
       },
     },
