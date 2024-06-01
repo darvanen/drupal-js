@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => {
             return 'foxy-assets/' + assetInfo.name
           },
           entryFileNames: (assetInfo) => {
-            return assetInfo.name
+            return assetInfo.name + '.js'
           },
         },
       },
