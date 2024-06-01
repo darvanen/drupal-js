@@ -8,20 +8,13 @@ export default defineConfig(({ mode }) => {
 
   return {
     build: {
-      baseUrl: 'web/libraries/compiled',
       cssCodeSplit: true,
       manifest: true,
       rollupOptions: {
         external: '[Drupal, once]',
         input: getInputs(),
         output: {
-          dir: 'web/libraries',
-          assetFileNames: (assetInfo) => {
-            return 'foxy-assets/' + assetInfo.name
-          },
-          chunkFileNames: (assetInfo) => {
-            return 'foxy-assets/' + assetInfo.name
-          },
+          dir: 'web/libraries/compiled',
           entryFileNames: (assetInfo) => {
             return assetInfo.name + '.js'
           },
