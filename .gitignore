@@ -22,7 +22,7 @@ dist
 /package.json
 /package-lock.json
 /yarn.lock
-/web/libraries/compiled
+/web/libraries
 /web/modules/contrib
 
 .idea

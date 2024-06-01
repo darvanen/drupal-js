@@ -9,12 +9,23 @@ export default defineConfig(({ mode }) => {
   return {
     build: {
       baseUrl: 'web/libraries/compiled',
-      manifest: true,
       cssCodeSplit: true,
-      outDir: 'web/libraries/compiled',
+      manifest: true,
       rollupOptions: {
-        input: getInputs(),
         external: '[Drupal, once]',
+        input: getInputs(),
+        output: {
+          dir: 'web/libraries',
+          assetFileNames: (assetInfo) => {
+            return 'foxy-assets/' + assetInfo.name
+          },
+          chunkFileNames: (assetInfo) => {
+            return 'foxy-assets/' + assetInfo.name
+          },
+          entryFileNames: (assetInfo) => {
+            return assetInfo.name
+          },
+        },
       },
     },
     css: { devSourcemap: true },
