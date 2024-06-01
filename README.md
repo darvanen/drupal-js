@@ -11,16 +11,28 @@ To see the POC in action, clone this repository, then run:
 
 ```bash
 composer install
+drush si
+drush en -y foxy collapsiblock
+drush uli
 ```
 
-You should see
-* a generated package.json file in the project root
-* a set of installed `node_modules` including a Collapsiblock dependency: `slide-element`
-* a compiled version of collapsiblock in `web/libraries/compiled`
+Then
+* Follow the link
+* Go to the home page
+* Use the contextual menu to configure a block
+* Turn the title display on and set the Collapsiblock settings to something other than 'none'
+* Go back to the home page
+* Click on the title of the block you edited
+
+Expected results
+* The block will expand/collapse when you click the title
+* There is a generated package.json file in the project root
+* There is a set of installed `node_modules` including a Collapsiblock dependency: `slide-element`
+* There is a compiled version of collapsiblock in `web/libraries/compiled/collapsiblock`
 
 Next steps:
 
-* Create a hook in the foxy module that redirects library definitions to the compiled version
+* Support CSS/image/etc assets
 
 You can find me on
 [Drupal Slack](https://www.drupal.org/community/contributor-guide/reference-information/talk/tools/slack) as @darvanen.

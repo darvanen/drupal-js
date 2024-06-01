@@ -14,21 +14,16 @@
             "url": "https://github.com/php-forge/foxy"
         },
         {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/collapsiblock.git"
-        },
-        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/collapsiblock": "dev-foxy as 4.2.0",
+        "drupal/collapsiblock": "4.3.0-rc1",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
-        "drupal/foxy": "2.x-dev",
-        "drupal/js_cookie": "^1.0",
+        "drupal/foxy": "2.0.0-alpha1",
         "drush/drush": "^12.5",
         "php-forge/foxy": "dev-custom-directory as 0.1.1"
     },
