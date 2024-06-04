@@ -39,3 +39,4 @@ Next steps:
 
 You can find me on
 [Drupal Slack](https://www.drupal.org/community/contributor-guide/reference-information/talk/tools/slack) as @darvanen.
+Come join the #frontend-bundler-initiative channel there!
