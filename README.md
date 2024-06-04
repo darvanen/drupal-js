@@ -1,11 +1,14 @@
 # Drupal JS
 
-This is currently just a proof of concept using a modified version of the Collapsiblock module. The end goal is to be
+This is currently just a proof of concept using the Collapsiblock and Foxy modules. The end goal is to be
 able to follow a pattern that allows modules to opt-in to Foxy and compile everything in one go, splitting out common
 dependencies.
 
 This would be particularly useful in enabling Drupal contributors to use JS dependencies without including them in the
 built code of their module, thus reducing the amount of code downloaded by the end user.
+
+The two non-standard things this project prototype has beyond those modules is the vite.config.js file and the post-install /
+post-update hooks to run vite.
 
 To see the POC in action, clone this repository, then run:
 
@@ -32,7 +35,7 @@ Expected results
 
 Next steps:
 
-* Support CSS/image/etc assets
+* [Support CSS/image/etc assets](https://www.drupal.org/project/foxy/issues/3452336)
 
 You can find me on
 [Drupal Slack](https://www.drupal.org/community/contributor-guide/reference-information/talk/tools/slack) as @darvanen.
