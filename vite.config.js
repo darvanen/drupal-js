@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
         output: {
           dir: 'web/libraries/compiled',
           entryFileNames: (assetInfo) => {
-            return assetInfo.name + '.js'
+            return assetInfo.name + '-[hash].js'
           },
         },
       },
@@ -47,12 +47,7 @@ function getInputs() {
       const data = jsYaml.load(fileContents)
       const jsFiles = extractJsFiles(data)
       jsFiles.forEach((filePath) => {
-        const fileName = filePath.substring(
-          filePath.lastIndexOf('/') + 1,
-          filePath.lastIndexOf('.'),
-        )
-        const key = moduleName + '/' + fileName
-        acc[key] = moduleDirectoryPath + '/' + filePath
+        acc[moduleName] = moduleDirectoryPath + '/' + filePath
       })
       return acc
     } catch (err) {

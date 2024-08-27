@@ -20,10 +20,16 @@ drush uli
 ```
 
 Then
-* Follow the link
+* Log in using the link
+* Go to /admin/config/system/foxy
+* Enter `web` and `/libraries/compiled/` in the two settings fields
+* Save the form
+
 * Go to the home page
 * Use the contextual menu to configure a block
 * Turn the title display on and set the Collapsiblock settings to something other than 'none'
+* Save the form
+
 * Go back to the home page
 * Click on the title of the block you edited
 

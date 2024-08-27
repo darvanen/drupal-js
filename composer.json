@@ -1,6 +1,6 @@
 {
-    "name": "drupal/recommended-project",
-    "description": "Project template for Drupal projects with a relocated document root",
+    "name": "darvanen/drupal-js",
+    "description": "A proof of concept project for utilising the foxy module to compile frontend assets.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
@@ -20,15 +20,15 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/collapsiblock": "4.3.0-rc3",
-        "drupal/core-composer-scaffold": "^10.2",
-        "drupal/core-recommended": "^10.2",
-        "drupal/foxy": "2.0.0-alpha1",
-        "drush/drush": "^12.5",
+        "drupal/collapsiblock": "^4.3.0",
+        "drupal/core-composer-scaffold": "^11.0",
+        "drupal/core-recommended": "^11.0",
+        "drupal/foxy": "^2.0.0@alpha",
+        "drush/drush": "^13.0",
         "php-forge/foxy": "dev-main as 0.1.1"
     },
     "require-dev": {
-        "drupal/core-dev": "^10.2"
+        "drupal/core-dev": "^11.0"
     },
     "conflict": {
         "drupal/drupal": "*"
