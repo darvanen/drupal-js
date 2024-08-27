@@ -25,19 +25,23 @@ Then
 * Enter `web` and `/libraries/compiled/` in the two settings fields
 * Save the form
 
+
 * Go to the home page
 * Use the contextual menu to configure a block
 * Turn the title display on and set the Collapsiblock settings to something other than 'none'
 * Save the form
 
+
 * Go back to the home page
 * Click on the title of the block you edited
+
 
 Expected results
 * The block will expand/collapse when you click the title
 * There is a generated package.json file in the project root
 * There is a set of installed `node_modules` including a Collapsiblock dependency: `slide-element`
-* There is a compiled version of collapsiblock in `web/libraries/compiled/collapsiblock`
+* There is a compiled JS asset for collapsiblock in `web/libraries/compiled`
+* There is a compiled CSS asset for collapsiblock in `web/libraries/compiled/assets`
 
 Next steps:
 
