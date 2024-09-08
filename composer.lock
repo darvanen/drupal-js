@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddcbb4a314ed0b3f18728a1cb63226c3",
+    "content-hash": "5e9d8a113c040ded9875d81ad925ca72",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3666,16 +3666,16 @@
         },
         {
             "name": "php-forge/foxy",
-            "version": "dev-main",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-forge/foxy.git",
-                "reference": "dfc2523edaa0c501a238bc600652a91ca5b1f5e2"
+                "reference": "d1d0e1a20a43bf1a5265600a5228034b46997aee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-forge/foxy/zipball/dfc2523edaa0c501a238bc600652a91ca5b1f5e2",
-                "reference": "dfc2523edaa0c501a238bc600652a91ca5b1f5e2",
+                "url": "https://api.github.com/repos/php-forge/foxy/zipball/d1d0e1a20a43bf1a5265600a5228034b46997aee",
+                "reference": "d1d0e1a20a43bf1a5265600a5228034b46997aee",
                 "shasum": ""
             },
             "require": {
@@ -3694,7 +3694,6 @@
                 "symplify/easy-coding-standard": "^12.1",
                 "vimeo/psalm": "^5.20"
             },
-            "default-branch": true,
             "type": "composer-plugin",
             "extra": {
                 "class": "Foxy\\Foxy",
@@ -3743,7 +3742,7 @@
                 "yarn"
             ],
             "support": {
-                "source": "https://github.com/php-forge/foxy/tree/main",
+                "source": "https://github.com/php-forge/foxy/tree/0.1.2",
                 "issues": "https://github.com/php-forge/foxy/issues"
             },
             "funding": [
@@ -3752,7 +3751,7 @@
                     "url": "https://github.com/sponsors/terabytesoftw"
                 }
             ],
-            "time": "2024-06-10T23:31:12+00:00"
+            "time": "2024-06-10T10:19:55+00:00"
         },
         {
             "name": "phpowermove/docblock",
@@ -11644,18 +11643,10 @@
             "time": "2022-06-03T18:03:27+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "php-forge/foxy",
-            "version": "dev-main",
-            "alias": "0.1.1",
-            "alias_normalized": "0.1.1.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/foxy": 15,
-        "php-forge/foxy": 20
+        "drupal/foxy": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
