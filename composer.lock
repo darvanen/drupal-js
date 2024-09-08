@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e9d8a113c040ded9875d81ad925ca72",
+    "content-hash": "3af4d763c9ee508bf146bc18937d5e46",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1643,6 +1643,54 @@
                 }
             ],
             "time": "2024-02-05T11:35:39+00:00"
+        },
+        {
+            "name": "drupal/a11y_autocomplete_element",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/a11y_autocomplete_element.git",
+                "reference": "6f0bbf3ac1cf8bbd38af760df3d3ba687475c6be"
+            },
+            "require": {
+                "drupal/core": ">=9.2"
+            },
+            "require-dev": {
+                "php-forge/foxy": "^0.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "1.0.4+2-dev",
+                    "datestamp": "1725831141",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "danielveza",
+                    "homepage": "https://www.drupal.org/user/3362504"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides a Render element that extends from a Select field and automatically converts it to use the Accessible Autocomplete library.",
+            "homepage": "https://www.drupal.org/project/a11y_autocomplete_element",
+            "support": {
+                "source": "https://git.drupalcode.org/project/a11y_autocomplete_element"
+            }
         },
         {
             "name": "drupal/collapsiblock",
@@ -11646,6 +11694,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/a11y_autocomplete_element": 20,
         "drupal/foxy": 15
     },
     "prefer-stable": true,

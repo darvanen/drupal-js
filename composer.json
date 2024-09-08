@@ -20,7 +20,8 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/collapsiblock": "^4.3.0",
+        "drupal/a11y_autocomplete_element": "1.x-dev",
+        "drupal/collapsiblock": "^4.3",
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/foxy": "^2.0.0@alpha",
